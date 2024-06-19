@@ -66,4 +66,4 @@ class Config(object):
     USER_EMAILS = None if not USER_EMAILS else USER_EMAILS
 
     # other
-    ACCEPTING_REGISTRATION = bool(int(os.environ.get('ACCEPTING_REGISTRATION', 0))) or False
+    ACCEPTING_REGISTRATION = True
