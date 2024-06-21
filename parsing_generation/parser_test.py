@@ -1,4 +1,6 @@
 import numpy as np
+from parser import parse
+
 data = np.array([
     0.008056217124410847,
     0.14642515445294824,
@@ -101,7 +103,6 @@ data = np.array([
     -0.24402661116518354
 ])
 
-from parser import parse
 
-print(parse(data, [33,79], "Demo 200", "V1", ("","",list(range(data.size))))
-)
+print(parse(data, [33, 79], "Demo 200", "V1", ("", "", list(range(data.size))))
+      )

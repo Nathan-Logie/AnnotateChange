@@ -1,10 +1,8 @@
-import json
-
 import numpy as np
 
 
 def parse(dataset: np.ndarray, onset: list[int], name: str, measurement: str,
-          x_axis: tuple[str, str, list[any]]) -> dict:
+          x_axis: tuple[str, str, list[any]]) -> dict[str, any]:
     """
         Returns the dataset parsed into a dict to be turned into json.
 
@@ -17,7 +15,7 @@ def parse(dataset: np.ndarray, onset: list[int], name: str, measurement: str,
             In order Type (str), Format (str), Raw_Values (list[any])
 
         Returns:
-            parsed_dict (dict): The parsed dict to be turned into json.
+            parsed_dict (dict[str, any): The parsed dict to be turned into json.
         """
 
     parsed_dict = {"name": name.split(' ')[0].lower(),
