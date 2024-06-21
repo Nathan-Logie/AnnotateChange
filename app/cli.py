@@ -7,8 +7,6 @@
 import click
 import getpass
 
-from email_validator import validate_email
-
 from app import db
 from app.models import User
 
@@ -30,7 +28,6 @@ def register(app):
         if user is not None:
             raise ValueError("User already exists")
 
-        validate_email(email)
 
         user = User(
             username=username,

@@ -28,7 +28,7 @@ class User(UserMixin, db.Model):
     is_admin = db.Column(db.Boolean(), default=False)
 
     # after email is confirmed:
-    is_confirmed = db.Column(db.Boolean(), default=False)
+    is_confirmed = db.Column(db.Boolean(), default=True)
 
     # after all demo tasks completed:
     is_introduced = db.Column(db.Boolean(), default=False)

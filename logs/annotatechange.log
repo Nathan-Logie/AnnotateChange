@@ -33,3 +33,80 @@ AttributeError: 'str' object has no attribute 'decode'
 2024-06-19 19:46:28,164 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
 2024-06-19 19:46:47,610 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
 2024-06-19 19:49:58,722 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
+2024-06-19 19:55:39,586 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
+2024-06-19 20:04:02,893 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
+2024-06-19 20:04:38,034 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
+2024-06-19 20:05:10,837 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
+2024-06-19 20:08:17,060 ERROR: Demo requested unavailable dataset: demo_400 [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/main/demo.py:536]
+2024-06-21 12:19:18,357 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
+2024-06-21 12:21:09,846 ERROR: Exception on /auth/register [POST] [in /Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/auth/routes.py", line 159, in register
+    send_email_confirmation_email(user)
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/auth/email.py", line 28, in send_email_confirmation_email
+    token = user.get_email_confirmation_token()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/models.py", line 75, in get_email_confirmation_token
+    ).decode("utf-8")
+      ^^^^^^
+AttributeError: 'str' object has no attribute 'decode'
+2024-06-21 12:22:17,827 ERROR: Exception on /auth/register [POST] [in /Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/auth/routes.py", line 159, in register
+    send_email_confirmation_email(user)
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/auth/email.py", line 28, in send_email_confirmation_email
+    token = user.get_email_confirmation_token()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/models.py", line 75, in get_email_confirmation_token
+    ).decode("utf-8")
+      ^^^^^^
+AttributeError: 'str' object has no attribute 'decode'
+2024-06-21 12:23:29,161 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
+2024-06-21 12:23:42,631 INFO: AnnotateChange startup [in /Users/nathanlogie/Summer Projects/AnnotateChange/app/__init__.py:125]
+2024-06-21 12:24:14,328 ERROR: Exception on /auth/register [POST] [in /Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py:1744]
+Traceback (most recent call last):
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/anaconda3/lib/python3.11/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/auth/routes.py", line 159, in register
+    send_email_confirmation_email(user)
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/auth/email.py", line 28, in send_email_confirmation_email
+    token = user.get_email_confirmation_token()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/nathanlogie/Summer Projects/AnnotateChange/app/models.py", line 75, in get_email_confirmation_token
+    ).decode("utf-8")
+      ^^^^^^
+AttributeError: 'str' object has no attribute 'decode'
