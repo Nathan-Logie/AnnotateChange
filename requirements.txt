@@ -36,3 +36,5 @@ packaging~=23.2
 pycparser~=2.22
 referencing~=0.35.1
 numpy~=2.0.0
+pyparsing~=3.1.2
+matplotlib~=3.9.0
